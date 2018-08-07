@@ -1,0 +1,38 @@
+{
+  "name": "array-insert-random",
+  "version": "1.0.0",
+  "description": "Inserts items randomly into an array.",
+  "keywords": [
+    "array",
+    "insert",
+    "random"
+  ],
+  "license": "MIT",
+  "author": "Sean Genabe <seanmarviolivergenabe@gmail.com>",
+  "main": "array-insert-random.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "arrify": "^1.0.1",
+    "random-int": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/arrify": "^1.0.4",
+    "ava": "^0.25.0",
+    "typescript": "^2.9.2"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seangenabe/array-insert-random.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seangenabe/array-insert-random/issues"
+  },
+  "homepage": "https://github.com/seangenabe/array-insert-random#readme"
+}
