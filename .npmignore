@@ -1,3 +1,6 @@
-.idea/
+.vscode/
+.gitignore
+tsconfig.json
 *.ts
 !*.d.ts
+*.tgz

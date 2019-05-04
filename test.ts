@@ -1,18 +1,22 @@
-import test from 'ava'
-import arrayInsertRandom = require('./')
+import arrayInsertRandom = require("./")
+import { test, run } from "t0"
+import { strict as assert } from "assert"
+const { deepStrictEqual } = assert
 
-test('single item', t => {
-  const arr = ['a','b','c']
-  const item = 'd'
+test("single item", () => {
+  const arr = ["a", "b", "c"]
+  const item = "d"
   arrayInsertRandom(arr, item)
   arr.sort()
-  t.deepEqual(arr, ['a', 'b', 'c' ,'d'])
+  deepStrictEqual(arr, ["a", "b", "c", "d"])
 })
 
-test('multiple items', t => {
-  const arr = ['a' , 'b']
-  const items = ['c', 'd']
+test("multiple items", () => {
+  const arr = ["a", "b"]
+  const items = ["c", "d"]
   arrayInsertRandom(arr, items)
   arr.sort()
-  t.deepEqual(arr, ['a', 'b', 'c', 'd'])
+  deepStrictEqual(arr, ["a", "b", "c", "d"])
 })
+
+run()
